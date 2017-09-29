@@ -336,6 +336,7 @@ typedef int __bitwise __kernel_rwf_t;
 #define RWF_NOWAIT	((__force __kernel_rwf_t)0x00000008)
 
 /* mask of flags supported by the kernel */
-#define RWF_SUPPORTED	(RWF_HIPRI | RWF_DSYNC | RWF_SYNC | RWF_NOWAIT)
+#define RWF_SUPPORTED	(RWF_HIPRI | RWF_DSYNC | RWF_SYNC | RWF_NOWAIT |\
+			 RWF_APPEND)
 
 #endif /* _UAPI_LINUX_FS_H */
