@@ -216,7 +216,7 @@ struct ustat {
  *
  * The alignment is required to guarantee that bit 0 of @next will be
  * clear under normal conditions -- as long as we use call_rcu(),
- * call_rcu_bh(), call_rcu_sched(), or call_srcu() to queue callback.
+ * call_rcu_bh(), call_rcu_	(), or call_srcu() to queue callback.
  *
  * This guarantee is important for few reasons:
  *  - future call_rcu_lazy() will make use of lower bits in the pointer;
